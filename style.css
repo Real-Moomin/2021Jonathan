@@ -29,6 +29,7 @@ body {
     width: 100%;
     margin-left: 0%
   }
+  .rot{border-width: 16px !important;}
 }
 
 .logo img {
@@ -52,11 +53,11 @@ body {
   }
 }
 
-.box{width: 80%; height: 50%; background-color: #fff; border-radius: 20px; display: inline-block;
+.box{width: 80%; height: 50%; background-color: #fff; border-radius: 60px; display: inline-block;
 box-shadow: 0px 30px 0px -10px black; margin-top: 10%; padding-top: 5%; padding-bottom: 5%; margin-bottom: 200px; padding-left: 2%; padding-right: 2%;border: solid 3px #000;
 }
 
-.rot{width: 20%; padding-bottom: 20%; border-radius: 100px; background-color: #ddd; display: inline-block; margin: 4%;
+.rot{width: 20%; padding-bottom: 20%; border-radius: 100px; background-color: #ddd; display: inline-block; margin: 3.3%;
 box-shadow: 0px 10px 0px 0px black; border: solid 6px #000; }
 .rot:hover{cursor: pointer; opacity: 0.7;}
 .rot_1{background-color: #428D2D}
