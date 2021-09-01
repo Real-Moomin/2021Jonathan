@@ -1,0 +1,87 @@
+body {
+  background-image: url("img/bg.svg");
+  width: 100%;
+  background-repeat: repeat;
+  margin: 0;
+}
+
+#container {
+  text-align: center;
+  width: 50%;
+  margin-left: 25%
+}
+
+@media (orientation: landscape)  and (max-width: 480px) {
+  #container {
+    width: 50%;
+    margin-left: 25%
+  }
+}
+
+@media (orientation: portrait) {
+  #container {
+    padding-top: 100px;
+    width: 100%;
+    margin-left: 0%
+  }
+}
+
+.logo img {
+  width: 100%;
+  margin-top: 50px;
+  transform: translatey(0px);
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.box{width: 80%; height: 50%; background-color: #fff; border-radius: 20px; display: inline-block;
+box-shadow: 0px 30px 0px -10px black; margin-top: 10%; padding-top: 5%; padding-bottom: 5%; margin-bottom: 200px; padding-left: 2%; padding-right: 2%;border: solid 3px #000;
+}
+
+.rot{width: 20%; padding-bottom: 20%; border-radius: 100px; background-color: #ddd; display: inline-block; margin: 4%;
+box-shadow: 0px 10px 0px 0px black; border: solid 6px #000; }
+.rot:hover{cursor: pointer; opacity: 0.7;}
+.rot_1{background-color: #428D2D}
+.rot_2{background-color: #FEF953}
+.rot_3{background-color: #EC8235}
+.rot_4{background-color: #F097BC}
+.rot_5{background-color: #A049F6}
+.rot_6{background-color: #64BDE7}
+
+.invisible{visibility: hidden;}
+.visible{visibility: visible;}
+
+
+.window_bg{width: 300%; height: 300%; z-index: 1; position: fixed; background-color: #000; opacity: 80%; top: 0; left: 0;}
+.window_bg:hover{cursor: pointer;}
+.window{width: 50%; padding :10%; z-index: 2; position: absolute; top: 50%; transform: translateY(-50%); left: 15%; background-color: #fff; border-radius: 20px;}
+.window p{font-size: 3rem; font-weight: 600}
+.pop{animation: popup 0.5s ease-in-out;}
+
+  @keyframes popup {
+    0% {
+      transform: translatey(-48%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translatey(-50%);
+      opacity: 1;
+    }
+  }
+
+.close{position: absolute; top: 40px; right: 45px; width: 40px;}
+.close:hover{opacity: 0.7; cursor: pointer;}
